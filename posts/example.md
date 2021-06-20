@@ -1,10 +1,13 @@
 ---
+permalink: "hellow-world"
 title: Hello World
 summary: This is a post
 date: 2020-01-01
-permalink: 'test'
-tags: hello, world
+tags: Wordpress, Woocommerce, Prestashop, Magento2, Shopify
+image: "app1.png"
 ---
+
+###permalink: 'test'
 
 - this
 - is

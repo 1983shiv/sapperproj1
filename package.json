@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "webdesign-ninjas",
+  "description": "We transform your digital ideas into reality",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
@@ -10,13 +10,20 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "lint": "eslint . --ext .js,.svelte"
+    "lint": "eslint . --ext .js,.svelte",
+    "b2": "yarn build:tailwindcss && sapper build --legacy",
+    "b3": "yarn build:tailwindcss && sapper build --legacy && node ./scripts/gh-pages.js",
+    "e2": "yarn build:tailwindcss && sapper export --legacy && node ./scripts/gh-pages.js",
+    "dev:tailwindcss": "postcss static/tailwind.css -o static/main.css -w",
+    "build:tailwindcss": "postcss static/tailwind.css -o static/main.css"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "compression": "^1.7.1",
     "polka": "next",
     "prismjs": "^1.23.0",
-    "sirv": "^0.4.0"
+    "sirv": "^0.4.0",
+    "gh-pages": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -29,11 +36,16 @@
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-replace": "^2.2.0",
+    "autoprefixer": "^10.2.6",
+    "@beyonk/svelte-carousel": "^2.8.0",
     "eslint": "^6.8.0",
+    "moment": "^2.29.1",
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-svelte3": "^2.7.3",
     "lodash": "^4.17.21",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
     "prism-themes": "^1.5.0",
     "rollup": "^2.6.1",
     "rollup-plugin-babel": "^4.0.2",
@@ -42,6 +54,11 @@
     "rollup-plugin-terser": "^5.3.0",
     "sapper": "^0.28.0",
     "svelte": "^3.0.0",
-    "svelte-preprocess": "^3.5.0"
+    "svelte-preprocess": "^3.5.0",
+    "tailwindcss": "^2.2.0",
+    "svelte-feather-icons": "^3.3.0",
+    "svelte-paginate": "^0.0.1",
+    "svelte-seo": "^1.1.0",
+    "svelte-tawk-to-chat-widget": "^0.0.3"
   }
 }
