@@ -46,7 +46,7 @@
     class="lg:px-16 px-6 flex flex-wrap justify-center my-1 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-2/3 lg:my-2 lg:w-2/3 xl:my-2 xl:px-2 xl:w-2/3"
   >
     <div
-      class="flex flex-wrap w-full border-1 border-pink-500 hover:shadow-lg py-12 px-36 mb-20 flex-col"
+      class="flex flex-wrap w-full border-1 border-pink-500 hover:shadow-lg py-12 sm:px-4 lg:px-8 mb-20 flex-col"
     >
       <Heading
         text={post.title}

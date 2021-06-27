@@ -4,11 +4,11 @@
   export let post;
 </script>
 
-<div class="w-full m-4 cover">
+<div class="w-full cover">
   <div class="shadow rounded-lg overflow-hidden">
     <a class="mt-2" href={`/posts/${post.permalink}`} title={post.title}>
       <img
-        class="m-2 w-full object-cover object-center"
+        class="w-full object-cover object-center"
         src={post.image}
         alt={post.title}
         width="200px"

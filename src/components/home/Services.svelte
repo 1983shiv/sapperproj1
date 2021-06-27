@@ -4,8 +4,10 @@
 </script>
 
 <section id="services" class="text-gray-600 body-font">
-  <div class="container pt-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-4 flex-col items-center text-center">
+  <div class="pt-24 mx-auto">
+    <div
+      class="flex flex-wrap sm:w-full mb-4 flex-col items-center text-center"
+    >
       <Heading
         text="Ninja Services"
         size="text-4xl sm:text-5xl md:text-6xl"
@@ -13,7 +15,9 @@
         color="text-pink-500"
       />
 
-      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 text-justify">
+      <p
+        class="lg:w-1/2 sm:w-full p-4 leading-relaxed text-gray-500 text-justify"
+      >
         We offer tailor made solutions for all size companies and SMEs and
         StartUps. We prioritize your feedback to make sure that each and every
         specification is according to your requirements. With our long and
@@ -26,7 +30,7 @@
 </section>
 
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-2 mb-8 mx-auto ">
+  <div class="px-5 py-2 mb-8 mx-auto ">
     <div
       class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 text-center"
     >
@@ -53,18 +57,6 @@
 
 <style>
   #services {
-    /* height: 98vh; */
-    /* background-image: linear-gradient(
-        to right bottom,
-        rgba(247, 39, 160, 0.994),
-        rgba(243, 179, 217, 0.96)
-      ),
-      url("../../../static/Taieri.png");
-    background-size: cover;
-    background-position: top;
-    position: relative; */
-    /* Source : https://bennettfeely.com/clippy/ */
-    /* top left(x y), top right (x y), bottom right (x y), bottom left (x y)*/
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     padding-bottom: 100px;
   }

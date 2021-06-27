@@ -26,11 +26,13 @@
 />
 
 <NavHero />
-<Whyus />
+<div id="whyus">
+  <Whyus />
+</div>
 <ClientReview />
 <section
   id="casestudies"
-  class="text-gray-600 body-font bg-gradient-to-r from-gray-100 via-gray-50 to-gray-0 my-8 py-8"
+  class="text-gray-600 body-font bg-gradient-to-r from-gray-100 via-gray-50 to-gray-0 my-8 sm:py-64 md: py-8"
 >
   <Heading
     text="Case Studies"
@@ -96,8 +98,15 @@
 />
 
 <style>
+  @media only screen and (max-width: 769px) {
+    #casestudies {
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+      padding-bottom: 100px;
+    }
+  }
+
   #casestudies {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-    padding-bottom: 100px;
+    padding-bottom: 200px;
   }
 </style>

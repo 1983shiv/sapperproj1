@@ -11,6 +11,7 @@ import autoPreprocess from 'svelte-preprocess'
 import config from 'sapper/config/rollup.js'
 import path from 'path'
 import pkg from './package.json'
+import url from '@rollup/plugin-url';
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
@@ -42,6 +43,10 @@ export default {
         hydratable: true,
         emitCss: true
       }),
+      url({
+				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
+				publicPath: '/client/',
+			}),
       resolve({
         browser: true,
         dedupe: ['svelte']

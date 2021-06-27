@@ -27,7 +27,7 @@
         heading="font-heading1 text-center mb-8"
         color="text-pink-500"
       />
-      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+      <p class="lg:w-1/2 w-full p-4 text-justify leading-relaxed text-gray-500">
         We are a team of passionate ui/ux designers, developers, and coders with
         a strong zeal to work with SMEs, emerging startups and individuals who
         need technical help. In the last 12 years, We got the opportunity to

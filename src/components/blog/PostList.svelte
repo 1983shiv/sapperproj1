@@ -7,12 +7,12 @@
   class="flex flex-wrap my-4 mx-2 overflow-hidden sm:mx-2 md:mx-2 lg:mx-2 xl:mx-2"
 >
   {#each posts as post}
-    <!-- <div
-      class="my-2 px-2 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/3"
-    > -->
     <div
-      class="mb-8 my-2 px-2 w-1/2 overflow-hidden sm:my-3 sm:px-3 md:my-3 md:px-3 lg:my-3 lg:px-3 xl:my-3 xl:px-3"
+      class="my-2 px-2 overflow-hidden sm:my-1 sm:px-1 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/2 xl:my-2 xl:px-2 xl:w-1/3"
     >
+      <!-- <div
+      class="mb-8 my-2 px-2 sm:w-full md:w-1/2 overflow-hidden sm:my-3 sm:px-3 md:my-3 md:px-3 lg:my-3 lg:px-3 xl:my-3 xl:px-3"
+    > -->
       <PostCard {post} />
     </div>
   {/each}

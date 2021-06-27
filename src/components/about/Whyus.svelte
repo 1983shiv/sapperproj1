@@ -264,20 +264,15 @@
 </section>
 
 <style>
+  @media only screen and (max-width: 600px) {
+    #whyus {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      padding-bottom: 100px;
+    }
+  }
+
   #whyus {
-    /* height: 98vh; */
-    /* background-image: linear-gradient(
-        to right bottom,
-        rgba(247, 39, 160, 0.994),
-        rgba(243, 179, 217, 0.96)
-      ),
-      url("../../../static/Taieri.png");
-    background-size: cover;
-    background-position: top;
-    position: relative; */
-    /* Source : https://bennettfeely.com/clippy/ */
-    /* top left(x y), top right (x y), bottom right (x y), bottom left (x y)*/
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    padding-bottom: 120px;
   }
 </style>
