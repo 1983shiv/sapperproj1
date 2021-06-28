@@ -85,9 +85,9 @@
     {/if}
     {#if reviewsrc === "google"}
       <img
-        src="Google-reviews-logo.png"
+        src="/webp/Google-reviews-logo-400.webp"
         alt="Google Reviews for Webdesign Ninjas"
-        width="100%"
+        width="200px"
         height="auto"
       />
     {/if}

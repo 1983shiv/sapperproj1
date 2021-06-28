@@ -11,8 +11,8 @@
         class="w-full object-cover object-center"
         src={post.image}
         alt={post.title}
-        width="200px"
-        height="120px"
+        width="100%"
+        height="auto"
       />
     </a>
     <div class="p-6">

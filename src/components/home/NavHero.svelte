@@ -58,7 +58,12 @@
   </div>
   <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
     <!-- svelte-ignore a11y-img-redundant-alt -->
-    <img src="home-hero.jpg" alt="Hero Image" />
+    <img
+      src="webp/homehero-1200.webp"
+      alt="transforming your digital ideas into reality"
+      width="1400px"
+      height="auto"
+    />
   </div>
 </div>
 
