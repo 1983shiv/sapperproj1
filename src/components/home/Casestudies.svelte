@@ -73,7 +73,7 @@
             <img
               src={imgSrc}
               alt={title}
-              style="width:100%"
+              width="650px"
               max-width="650px"
               height="auto"
             />

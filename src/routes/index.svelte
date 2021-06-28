@@ -42,7 +42,7 @@
   />
   <Casestudies
     imgOri={true}
-    imgSrc="images/impossiblefoods.png"
+    imgSrc="images/impossiblefoods.jpg"
     title="Impossible Foods"
     detail="Impossible Foods is a multi Vendor with card functionality, where people who grow / agriculture the meat can register and sell their ready products across six countries."
     loadingSpeed="97"
@@ -54,7 +54,7 @@
   />
   <Casestudies
     imgOri={false}
-    imgSrc="images/behuppy.png"
+    imgSrc="images/behuppy.jpg"
     title="Behuppy"
     detail="Behuppy is a manufacture of Toothpaste Tablets and wooden tooth brush and selling this unique idea to make ocean clean from plastic."
     loadingSpeed="98"
@@ -66,7 +66,7 @@
   />
   <Casestudies
     imgOri={true}
-    imgSrc="images/inetmart-biz.png"
+    imgSrc="images/inetmart-biz.jpg"
     title="INetMart.Biz"
     detail="INetMart.Biz is a prelaunch website for online marketplace that allows entrepreneurs to build a sustainable business. It offer a hassle-free, one-stop solution connecting businesses with customers."
     loadingSpeed="98"
