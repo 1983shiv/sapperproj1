@@ -19,6 +19,7 @@
   {#each catmenu.categories as cat}
     {#if !(`${cat.slug}` === "uncategorized")}
       <a
+        prefetch
         href={`/categories/${cat.slug}`}
         title={cat.name}
         class="p-2 hover:p-4 hover:translate-x-2 hover:bg-gray-50">#{cat.name}

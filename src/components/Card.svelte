@@ -20,6 +20,7 @@
   <div class="shadow rounded-lg overflow-hidden">
     <a class="mt-2" href="posts/{slug}" {title}>
       <img
+        prefetch
         class="w-full object-cover object-center overflow-hidden min-h-60 max-h-60"
         src={imgsrc ? imgsrc : ''}
         alt={title ? title : ''}
@@ -29,8 +30,9 @@
     </a>
     <div class="p-6">
       <a
-          href="posts/{slug ? slug : ''}"
-          class="text-pink-500 inline-flex items-center md:mb-2 lg:mb-0"
+        prefetch
+        href="posts/{slug ? slug : ''}"
+        class="text-pink-500 inline-flex items-center md:mb-2 lg:mb-0"
           >
       <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
         {title ? title : ''}
@@ -47,7 +49,7 @@
         <span
           class="text-xs font-semibold inline-block py-1 px-2 rounded text-pink-600 bg-pink-200 uppercase last:mr-0 mr-1"
         >
-          <a href="categories/{cat.toString().toLowerCase()}">{cat}</a>
+          <a prefetch href="categories/{cat.toString().toLowerCase()}">{cat}</a>
         </span>
       {/each}
       <!-- <div class="flex items-center flex-wrap ">
