@@ -60,6 +60,7 @@
     "svelte-feather-icons": "^3.3.0",
     "svelte-paginate": "^0.0.1",
     "svelte-seo": "^1.1.0",
-    "svelte-tawk-to-chat-widget": "^0.0.3"
+    "svelte-tawk-to-chat-widget": "^0.0.3",
+    "svelte-timelines": "^0.0.2"
   }
 }

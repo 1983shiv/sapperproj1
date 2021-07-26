@@ -1,8 +1,14 @@
 <!-- <script context="module" ✂prettier:content✂="CiAgLy8gaW1wb3J0IHsgZmluZEJ5VGFnIH0gZnJvbSAiQC9wb3N0cyI7CiAgaW1wb3J0IHsgcG9zdHMgfSBmcm9tICJAL3Bvc3RzLmpzIjsKCiAgZXhwb3J0IGZ1bmN0aW9uIHByZWxvYWQocGFnZSkgewogICAgLy8gY29uc3QgeyB0YWcgfSA9IHBhZ2UucGFyYW1zOwogICAgLy8gY29uc3QgcG9zdHMgPSBmaW5kQnlUYWcodGFnKTsKCiAgICBsZXQgdGFncyA9IHBvc3RzLm1hcCgocG9zdCkgPT4gcG9zdC50YWdzKTsKICAgIGNvbnNvbGUubG9nKCJ0YWdzICIsIHRhZ3MpOwoKICAgIHJldHVybiB7IHRhZ3MgfTsKICB9Cg==" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script> -->
 <script>
   import Tags from "./Tags.svelte";
-  import { findAllTag } from "@/posts.js";
+  // import { findAllTag } from "@/posts.js";
+  export let catmenu;
+  import Search from "./Search.svelte";
 </script>
+
+<div class="m-4 p-8 shadow flex flex-wrap">
+  <Search />
+</div>
 
 <div class="m-4 p-8 shadow flex flex-wrap">
   <h2
@@ -10,10 +16,18 @@
   >
     Stack
   </h2>
-
-  <Tags tags={findAllTag()} />
+  {#each catmenu.categories as cat}
+    {#if !(`${cat.slug}` === "uncategorized")}
+      <a
+        href={`/categories/${cat.slug}`}
+        title={cat.name}
+        class="p-2 hover:p-4 hover:translate-x-2 hover:bg-gray-50">#{cat.name}
+      </a>
+    {/if}
+  {/each}
+  
 </div>
-
+<!-- 
 <div class="m-4 p-8 shadow">
   <div class="contact-form">
     <h2
@@ -60,4 +74,4 @@
       Or You can Skype at <a href="skype:srivastava.shiv">srivasava.shiv</a>
     </p>
   </div>
-</div>
+</div> -->

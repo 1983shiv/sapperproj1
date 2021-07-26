@@ -112,7 +112,7 @@
     background-color: white;
     margin: 5px;
     padding: 10px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px pink;
     max-height: 400px;
     overflow-y: scroll;
   }
@@ -140,12 +140,13 @@
     border: 1px solid pink;
     cursor: pointer;
     transition: 0.1s ease-in-out;
+    color: #222;
   }
 
   /* Add a dark background color to the active button */
   .btn:active,
   .active {
-    background-color: #000;
+    background-color: pink;
     color: white;
   }
 </style>
