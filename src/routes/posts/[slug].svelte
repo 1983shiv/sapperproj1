@@ -13,12 +13,13 @@
     const author = await this.fetch(authorUrl);
     const authordata = await author.json();
 
-    return { post: data, author: authordata, catmenu };
+    return { data, author: authordata, catmenu };
   }
 </script>
 
 <script>
-  export let post;
+  export let data;
+  $: post = data;
   export let author;
   export let catmenu;
   import Bio from "./../../components/Bio.svelte"
