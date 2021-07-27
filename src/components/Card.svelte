@@ -2,8 +2,6 @@
   // import { slugify } from "../../posts.js";
   // import Tags from "../Tags.svelte";
   import moment from "moment";
-  import { goto } from "@sapper/app";
-  import { urls } from '../../wp-settings';
   export let title = '';
   export let date = '';
   // export let excerpt = '';
@@ -17,20 +15,11 @@
     return toLowerCase(str);
   }
 
-  
-  
-  let searchTerm = "";
-
-  const handleClick = () => {
-    // there should be some parsing before putting it in the url, but it's not the subject
-    goto(`${urls.POST}${slug}`);
-  };
-
 </script>
 
 <div class="w-full cover my-4">
   <div class="shadow rounded-lg overflow-hidden">
-    <a onClick={handleClick} sapper:prefetch class="mt-2" href="posts/{slug ? slug : ''}" {title}>
+    <a sapper:prefetch class="mt-2" href="posts/{slug ? slug : ''}" {title}>
       <img
         prefetch
         class="w-full object-cover object-center overflow-hidden min-h-60 max-h-60"
@@ -41,8 +30,7 @@
       />
     </a>
     <div class="p-6">
-      <a
-        onClick={handleClick}  
+      <a 
         sapper:prefetch
         href="posts/{slug ? slug : ''}"
         class="text-pink-500 inline-flex items-center md:mb-2 lg:mb-0"
