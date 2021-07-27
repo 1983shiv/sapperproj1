@@ -9,7 +9,7 @@
     const catres = await this.fetch(urls.CATEGORIES);
     const catmenu = await catres.json();
 
-    let authorUrl = 'http://en.gravatar.com/' + data.author.nice_name + '.json';
+    let authorUrl = 'https://en.gravatar.com/' + data.author.nice_name + '.json';
 
     const author = await this.fetch(authorUrl);
     const authordata = await author.json();
