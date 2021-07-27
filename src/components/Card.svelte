@@ -18,7 +18,7 @@
 
 <div class="w-full cover my-4">
   <div class="shadow rounded-lg overflow-hidden">
-    <a class="mt-2" href="posts/{slug}" {title}>
+    <a sapper:prefetch class="mt-2" href="posts/{slug ? slug : ''}" {title}>
       <img
         prefetch
         class="w-full object-cover object-center overflow-hidden min-h-60 max-h-60"
@@ -30,7 +30,7 @@
     </a>
     <div class="p-6">
       <a
-        prefetch
+        sapper:prefetch
         href="posts/{slug ? slug : ''}"
         class="text-pink-500 inline-flex items-center md:mb-2 lg:mb-0"
           >
