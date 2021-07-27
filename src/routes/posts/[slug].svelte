@@ -14,14 +14,13 @@
     const author = await this.fetch(authorUrl);
     const authordata = await author.json();
 
-    return { data, author: authordata, catmenu };
+    return {post: data, author: authordata, catmenu };
   }
 </script>
 
 <script>
   
-  export let data;
-  $: post = data;
+  export let post;
   export let author;
   export let catmenu;
   import Bio from "./../../components/Bio.svelte"
@@ -29,6 +28,7 @@
   import TitleHero from "../../components/TitleHero.svelte";
   import SvelteSeo from "svelte-seo";
   import './wp.css';
+  console.log('post', post);
 </script>
 
 <SvelteSeo
