@@ -19,7 +19,7 @@
 </script>
 
 <script>
-  export let preload;
+  
   export let data;
   $: post = data;
   export let author;
@@ -42,9 +42,13 @@
   }}
 />
 
-{#if preload}
+{#if !post}
+<section id="articles"
+  class="flex flex-wrap mx-2 overflow-hidden my-4 sm:mx-2 md:mx-4 lg:mx-4 xl:mx-4"
+>
   <div>Loading...</div>
-{:else}
+  </section>
+{/if}
   
 
 <TitleHero title1={post.title} blogdate={post.date}/>
@@ -67,4 +71,3 @@ class="lg:px-8 px-6 flex flex-wrap justify-center my-1 w-full overflow-hidden sm
     <Sidebar {catmenu} />
   </div>
 </section>
-{/if}
