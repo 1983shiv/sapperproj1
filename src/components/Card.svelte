@@ -3,7 +3,7 @@
   // import Tags from "../Tags.svelte";
   import moment from "moment";
   import { goto } from "@sapper/app";
-  import { urls } from "../../../wp-settings.js";
+  import { urls } from '../../wp-settings';
   export let title = '';
   export let date = '';
   // export let excerpt = '';
