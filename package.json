@@ -21,7 +21,6 @@
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "compression": "^1.7.1",
     "gh-pages": "^3.2.0",
-    "node-fetch": "^2.6.1",
     "polka": "next",
     "prismjs": "^1.23.0",
     "sirv": "^0.4.0"

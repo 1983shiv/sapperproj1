@@ -1,9 +1,9 @@
 <script context="module">
   import { urls } from "../../../wp-settings.js";
-  import fetch from 'node-fetch'
+  
 
   export async function preload({ params, query }) {
-    const res = await fetch(`${urls.POST}slug:${params.slug}`);
+    const res = await this.fetch(`${urls.POST}slug:${params.slug}`);
     const data = await res.json();
 
     const catres = await this.fetch(urls.CATEGORIES);
