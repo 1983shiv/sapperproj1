@@ -4,17 +4,29 @@
 
   export async function preload({ params, query }) {
     const res = await this.fetch(`${urls.POST}slug:${params.slug}`);
+    if (res.status !== 200) {
+      return this.error(404, 'Not found');
+    }
     const data = await res.json();
 
     const catres = await this.fetch(urls.CATEGORIES);
+    if (catres.status !== 200) {
+      return this.error(404, 'Not found');
+    }
     const catmenu = await catres.json();
 
     let authorUrl = 'https://en.gravatar.com/' + data.author.nice_name + '.json';
 
     const author = await this.fetch(authorUrl);
+    if (author.status !== 200) {
+      return this.error(404, 'Not found');
+    }
     const authordata = await author.json();
 
+
+
     return {post: data, author: authordata, catmenu };
+    
   }
 </script>
 
