@@ -28,7 +28,6 @@
   import TitleHero from "../../components/TitleHero.svelte";
   import SvelteSeo from "svelte-seo";
   import './wp.css';
-  console.log('post', post);
 </script>
 
 <SvelteSeo
