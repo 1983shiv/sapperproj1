@@ -1,5 +1,10 @@
 module.exports = {
-  purge: [],
+  purge: {
+    mode: 'all',
+    preserveHtmlElements: false,
+    enabled: true,
+    content:['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx', './src/**/*.js', './src/**/*.svelte'],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

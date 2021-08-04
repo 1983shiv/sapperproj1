@@ -19,11 +19,9 @@
 
     const author = await this.fetch(authorUrl);
     if (author.status !== 200) {
-      return this.error(404, 'Not found');
+      return this.error(404, 'Page Not found');
     }
     const authordata = await author.json();
-
-
 
     return {post: data, author: authordata, catmenu };
     
